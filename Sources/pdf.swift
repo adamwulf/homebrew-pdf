@@ -10,7 +10,9 @@ import ArgumentParser
 
 @main
 struct PDF: AsyncParsableCommand {
-    private static let buildNumber = BuildSettings.CI_BUILD_NUMBER.isEmpty ? BuildSettings.CURRENT_PROJECT_VERSION : BuildSettings.CI_BUILD_NUMBER
+    private static let buildNumber = (BuildSettings.CI_BUILD_NUMBER.isEmpty ?
+                                      BuildSettings.CURRENT_PROJECT_VERSION :
+                                        BuildSettings.CI_BUILD_NUMBER)
     static var configuration = CommandConfiguration(
         commandName: "pdf",
         discussion: "PDF file utilities",
