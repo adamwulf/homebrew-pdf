@@ -23,3 +23,12 @@ $ brew install pdf
 $ brew uninstall pdf
 $ brew untap adamwulf/pdf
 ```
+
+## New Version
+
+1. Update `pdf.rb` to include the new version number.
+2. push repo to github
+3. tag that new commit with the same version as step 1
+4. `$ brew update`, or uninstal and reinstall
+
+It's not clear to me when brew updates the tapped formula from github. Uninstalling and reinstalling always works. `brew update` may work too.
