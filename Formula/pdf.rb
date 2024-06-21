@@ -3,6 +3,7 @@ class Pdf < Formula
   homepage "https://github.com/adamwulf/homebrew-pdf"
   url "https://github.com/adamwulf/homebrew-pdf.git", tag: "0.0.5"
   version "0.0.5"
+  license "MIT"
 
   depends_on "xcode": [:build]
 
