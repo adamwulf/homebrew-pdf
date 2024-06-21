@@ -1,0 +1,24 @@
+{
+  "originHash" : "d0d547d3b14178fc44aea3f54201f6873d5cdf974594a1170260965278d49944",
+  "pins" : [
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "0fbc8848e389af3bb55c182bc19ca9d5dc2f255b",
+        "version" : "1.4.0"
+      }
+    },
+    {
+      "identity" : "swifttoolbox",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/adamwulf/SwiftToolbox",
+      "state" : {
+        "branch" : "main",
+        "revision" : "dd1b861d209a853d62b5b335ca33e5c191bc4053"
+      }
+    }
+  ],
+  "version" : 3
+}
