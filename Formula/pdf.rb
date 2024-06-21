@@ -1,16 +1,15 @@
 class Pdf < Formula
   desc "A command line tool for working with PDF files"
   homepage "https://github.com/adamwulf/homebrew-pdf"
-  head "https://github.com/adamwulf/homebrew-pdf.git", branch: "main"
+  head "https://github.com/adamwulf/homebrew-pdf.git", tag: "0.0.1"
 
-  depends_on :xcode => ["15.0", :build]
+  depends_on "xcode": [:build]
 
   def install
-    system "swift", "build", "-c", "release"
-    bin.install ".build/release/pdf"
+    system "make", "install", "prefix=#{prefix}"
   end
 
   test do
-    system "#{bin}/pdf", "--version"
+    system "#{bin}pdf", "-help"
   end
 end
