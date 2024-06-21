@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "pdf",
     platforms: [
-        .macOS(.v10_14)
+        .macOS(.v10_15)
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", .upToNextMajor(from: "1.0.0")),
